@@ -7,29 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Flex</title>
     <style>
-      html,
       body {
-        height: 100%;
+        background-color: green;
       }
-      .father {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 100%;
-      }
-      .box {
-        background-color: red;
-        width: 200px;
-        height: 200px;
+      @media screen and (min-width: 320px) and (max-width: 640px) {
+        body {
+          background-color: blue;
+        }
       }
     </style>
   </head>
 
   <body>
-    <div class="father">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-    </div>
+    <div class="father"><div class="box">박형</div></div>
   </body>
 </html>
